@@ -51,7 +51,7 @@ Set Wabbajack to fullscreen and the browser window (pop up for download)
 **1. Q: It says "Button not found. Awaiting 7 seconds" even with Wabbajack open and in fullscreen.**
 
   **A:** The size of the buttons was done in a 1080p and should not be a problem. Close any overlay apps that
-   might change your screen color/alpha or programs that add effects in screen.
+   might change your screen color/alpha or that add effects.
 
      1.1 If you do not have any program, then:
 
