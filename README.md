@@ -1,94 +1,134 @@
 **What is this for:**
 
-This program is to be used in WABBAJACK.
+This program is to designed to be used with Wabbajack.
 
 .
 
 **Why:**
 
-With a FREE account, the limit of download is 2-3MB/S and you have to manually download each mod (click).
+With a FREE account, download speed is limited to 1.5-3MB/s, and you have to manually download each mod.
 
-To make it easier to download 1500mods or so, (I'm looking at you Eldergleam). 
+Therefore, this program will help you download hundreds of mods. (I'm looking at you Eldergleam). 
+
+.
+
+**Effiency:**
+
+On average, it will download a mod every 12 seconds.
+
+In 5 minutes, it downloaded 25 mods.
+
+Sometimes it will scroll past the download button and will take 24 seconds to download the mod.
 
 .
 
 **How it works:**
 
-The program will search for the button "Slow" / "Slow Download" or "Manual" on screen, move your mouse and click.
+The program checks for the following images, in this order: ("custom_download.png", "download.png", "lr_download.png", "hr_download.png").
 
-There is a delay between each click of 7 seconds.
+It compares each image to the screen, moves your mouse to the button and left click. (custom_download.png found!)
+
+If no button is found, it will scroll down 4 times and repeat the process.
+
+If still nothing is found, it will move to the top and output: Button not found. Awaiting 8 seconds
 
 .
 
 **Tips:**
 
-Be advised, watch from time to time if everything is working.
+ - **Make sure to change "Remind me about file ratings" to *Never*** in Site preferences.
 
-Sometimes it can open donate page or other program due to window size, moving your mouse while it is working and etc...
+   Click on your profile, Site preferences, Global (Remind me about file ratings).
 
-Your PC may slow down.
+   If you don't change it, there is a chance that while the program is running, the reminder **will cause it to loop forever**.
 
-For the time it is working, only use it for Wabbajack.
+ - **Do not zoom in or out**, due to the size of the buttons, if you resize the Nexusmod page, there is a high chance that it won't be able to find the button.
 
-File "download75.png" and "slow75.png" are files that you can change for other type of buttons or to increase accuracy.
+   If it happens, manually download the mod and wait for the automatic window resize of Wabbajack.
 
-Set it (screen) to stay awake, left it there and go to sleep.
+   After that, the program will run normal.
+
+ - Be advised to check occasionally if everything is working fine.
+
+ - Sometimes it may open donate page or another program due to window size, moving your mouse while it is running and etc.
+
+ - Your PC may slow down.
+
+ - While the program is running, **only use it for Wabbajack**.
+
+ - Due to its simple complexity, it will not work if **more than one monitor** is connected when it is running.
+
+ - You can change "custom_download.png" for another button or to increase accuracy. 
+It will be the first template that the program will compare.
+
+ - Set your screen to stay awake, leave it running and go to sleep. (-_-)zzz
 
 .
 
 **How can I download:**
 
-Go to releases, download the .zip from Google Drive.
+Go to releases, copy the link (Google Drive) and download the .zip
 
 Open "NexusSlowClicker.exe"
 
-Set Wabbajack to fullscreen and the browser window (pop up for download)
+Resize Wabbajack to fullscreen.
+
+Press "Enter"
 
 .
 
 **FAQ**
 
-**1. Q: It says "Button not found. Awaiting 7 seconds" even with Wabbajack open and in fullscreen.**
+**1. Q: It says "Button not found. Scrolling down. / Button not found. Awaiting 8 seconds" even with Wabbajack open and in fullscreen.**
 
-  **A:** The size of the buttons was done in a 1080p and should not be a problem. Close any overlay apps that
-   might change your screen color/alpha or that add effects.
+  **A:** One of two:
+  The size of the buttons were done in 1080p. If you have a 2K or 4K monitor, the program may not be able to find the button due to the UI scaling. 
 
-     1.1 If you do not have any program, then:
+  Or
+  
+  If there is an overlay app, that changes your screen color/alpha or that adds effects, it may affect the program.
+
+ **In any case**
+ 
+     1.1 To fix it, you need to:
 
       Close the program.
 
-      Printscreen the button on your screen.
+      Printscreen around the button on your screen.
 
-      Crop it in a way that shows "SLOW" or "SLOW DOWNLOAD" without any obstructions, e.g.
+      Crop it in a way that shows "Slow download" or "Slow" without any obstructions.
 
-      Change your button and rename it "download" or "downloadslow", if it is the case.
+      Rename it to "custom_download.png"
 
-      Paste it inside the main folder.
+      Paste it inside the main folder and "replace the file in the destination".
 
       Start NexusSlowClicker.exe
 
 **3. Q: How to stop the program?**
 
-   **A:** Press "CTRL + C".
+   **A:** Press "CTRL + C" and "Enter".
 
 **4. Q: It shows:**
 
-      [ WARN:0@0.281] global loadsave.cpp:241 cv::findDecoder imread_('download.png'): can't open/read file: check file path/integrity
+      Error: Could not load image custom_download.png
 
-      Traceback (most recent call last):
+      or
 
-      File "click.py", line 16, in <module>
+      Error: custom_download.png not found in the script folder.
 
-      AttributeError: 'NoneType' object has no attribute 'shape'
+   **A:** You deleted or don't have the image in your main folder.
 
-      [PYI-12740:ERROR] Failed to execute script 'click' due to unhandled exception!
-
-   **A:** You deleted or do not have six images x.png in your folder.
-
-      Download it again from Google Drive or have six x.png with those names:
-
-      ("download.png", "download75.png", "download75slow.png", "downloadslow.png", "manual.png", "manual_download.png")
-
-      Start NexusSlowClicker.exe
+      In both cases, make sure you have all 4 files inside your folder. 
+      ("custom_download.png", "download.png", "lr_download.png", "hr_download.png")
+    
+      If you have: Could not load image custom_download.png
+      
+      Delete custom_download.png and download it again from Google Drive or follow the steps in 1.
 
 
+      If you have: custom_download.png not found in the script folder.
+
+      Download the program again from Google Drive or follow the steps in 1.
+
+
+      
