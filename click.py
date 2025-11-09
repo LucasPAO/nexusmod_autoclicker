@@ -76,8 +76,11 @@ def find_and_click():
     center_x = button_x + (template_w[i]) // 2
     center_y = button_y + (template_h[i]) // 2
 
+    center_x += random.randint(-100, 100)
+    center_y += random.randint(-10, 10)
+
     # Move and click
-    pyautogui.moveTo(center_x, center_y, duration=0.5)
+    pyautogui.moveTo(center_x, center_y, duration=random.uniform(0.25, 1))
     pyautogui.click()
     return 0
 
@@ -104,3 +107,4 @@ except pyautogui.FailSafeException:
     print("\nProgram stopped by fail-safe (mouse to top-left corner).")
     time.sleep(3)
     exit(1)
+
