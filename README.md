@@ -106,7 +106,7 @@ Press "Enter"
 
 **3. Q: How to stop the program?**
 
-   **A:** Press "CTRL + C" and "Enter".
+   **A:** Press "CTRL + C".
 
 **4. Q: It shows:**
 
