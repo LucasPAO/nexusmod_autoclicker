@@ -4,6 +4,7 @@ import numpy as np
 import time
 import os
 from sys import exit
+import random
 
 # Path of default images, only custom_download can be changed to another image
 # Won't work if images are not in the same folder as the script
@@ -107,4 +108,5 @@ except pyautogui.FailSafeException:
     print("\nProgram stopped by fail-safe (mouse to top-left corner).")
     time.sleep(3)
     exit(1)
+
 
