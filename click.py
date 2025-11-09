@@ -108,5 +108,3 @@ except pyautogui.FailSafeException:
     print("\nProgram stopped by fail-safe (mouse to top-left corner).")
     time.sleep(3)
     exit(1)
-
-
