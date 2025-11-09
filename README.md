@@ -12,7 +12,7 @@ Therefore, this program will help you download hundreds of mods. (I'm looking at
 
 .
 
-**Effiency:**
+**Efficiency:**
 
 On average, it will download a mod every 12 seconds.
 
